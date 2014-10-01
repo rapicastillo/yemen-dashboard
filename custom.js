@@ -121,7 +121,7 @@
 
 			$("#internally-displaced").OCHAGraphBuilder({
 				type: "big", 
-				title: "Hello World", 
+				title: "", 
 				subtitle: csv_temp['yemen-data-002']['title'],
 				data_main : internally_displaced_data,
 				data_main_label: "Funding",
@@ -143,6 +143,14 @@
 					people_reached_data.push([parseInt(x), parseInt(csv_temp['yemen-data-003']['date'][x])]);
 				}
 			}
+            $("#people-reached").OCHAGraphBuilder({
+                type: "big", 
+                title: "", 
+                subtitle: csv_temp['yemen-data-003']['title'],
+                data_main : people_reached_data,
+                data_main_label: "Funding",
+                labels: csv_temp['yemen-data-003']['labels']
+            });
 
 /*
 			var pr_numeral = numeral(people_reached_data[people_reached_data.length - 1][1]).format('0.0a');
@@ -162,7 +170,7 @@
 
 			$("#people-in-need").OCHAGraphBuilder({
 				type: "pie", 
-				title: "Funding", 
+				title: "", 
 				subtitle: "Needed funding",
 				data_main : in_need,
 				data_main_label: "Funding",

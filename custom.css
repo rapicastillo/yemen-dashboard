@@ -20,7 +20,7 @@ body
 	.non-graph-area p{ margin: 0 }
 	.non-graph-area p.hero-item
 	{
-		font-size: 62px;
+		font-size: 50px;
 		padding-top: 22px;
 		text-transform: uppercase;
 	}
